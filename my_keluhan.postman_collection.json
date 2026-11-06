@@ -1,0 +1,133 @@
+{
+  "info": {
+    "_postman_id": "0e155f8a-95b6-4119-b13c-eed038f63136",
+    "name": "my_keluhan",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "58951890",
+    "_collection_link": "https://go.postman.co/collection/58951890-0e155f8a-95b6-4119-b13c-eed038f63136?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "Menambahkan data Keluhan",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"nama_keluhan\": \"Batuk\",\r\n  \"deskripsi_keluhan\": \"Batuk Berdahak\",\r\n  \"priortas\": \"Utama\",\r\n  \"terselesaikan\": \"Berhasil\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:3000/api/keluhan",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "api",
+            "keluhan"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Menampilkan seluru data keluhan",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:3000/api/keluhan/",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "api",
+            "keluhan",
+            ""
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "menampilkan data keluhan dengan id",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:3000/api/keluhan/6aedbbde332a77ac917ea87c",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "api",
+            "keluhan",
+            "6aedbbde332a77ac917ea87c"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "mengupdate data keluhan",
+      "request": {
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"nama_keluhan\": \"Batuk\",\r\n  \"deskripsi_keluhan\": \"Batuk Berdahak\",\r\n  \"priortas\": \"Utama\",\r\n  \"terselesaikan\": \"Gagal\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:3000/api/keluhan/6aedbbde332a77ac917ea87c",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "api",
+            "keluhan",
+            "6aedbbde332a77ac917ea87c"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "menghapus 1 data keluhan",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:3000/api/keluhan/6aedbbde332a77ac917ea87c",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "api",
+            "keluhan",
+            "6aedbbde332a77ac917ea87c"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
